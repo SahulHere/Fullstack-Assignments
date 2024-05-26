@@ -5,6 +5,17 @@
  */
 
 function sleep(milliseconds) {
+  return new Promise((resolve) =>{
+    const startTime= Date.now();
+    if(Date.now-startTime < milliseconds){
+      
+    }
+    resolve(`Waiting completed after ${milliseconds} milliseconds`);
+  });
 }
+
+sleep(7).then((result) =>{
+  console.log(result);
+});
 
 module.exports = sleep;
