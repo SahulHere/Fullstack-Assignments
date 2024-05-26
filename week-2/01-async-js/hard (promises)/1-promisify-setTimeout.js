@@ -6,7 +6,7 @@ function wait(n) {
     return new Promise((resolve) =>{
         setTimeout(()=>{
          resolve(`promise resolved after ${n} seconds`);
-    }, n*1000):
+    }, n*1000);
    });
 }
 
